@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Pyber Home</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="background">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="latitude-brand" href="index.html" style="margin-left: 60px"><strong>Pyber</strong></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="https://mattmurphey25.github.io/">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bubble.html">Bubble Chart</a></li>
+                            <li><a href="driver_pie.html">Driver Pie Chart</a></li>
+                            <li><a href="fare_pie.html">Fare Pie Chart</a></li>
+                            <li><a href="ride_pie.html">Rider Pie Chart</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid container-fluid-1" class="clearfix">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <div class="box">
+                    <h1><strong>Uber: City Type vs. Market</strong></h1>
+                    <hr>
+                    <p class="text">
+                        <img src="Resources\Pyber_bubble.png" alt="Bubble Graph" style="width:200px;height:140px;float:left;margin-right:15px;margin-bottom:10px;">
+                        This project was created to analyze rideshare markets with respect to city type. This was accomplished using CSV data gathered by cities types.
+                        <br>
+                        <br>
+                        Matplotlib was used to plot a four variable bubble chart, as well as the percentages of each cty type. Each graph has itsown page describing the results, as well as an overall comparison page comparing all four graphs.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="box">
+                    <h2><strong>Visualizations</strong></h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-3">
+                            <a href="bubble.html" class="thumbnail">
+                                <img src="Resources\Pyber_bubble.png" alt="Bubble Graph">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-3">
+                            <a href="driver_pie.html" class="thumbnail">
+                                <img src="Resources\Pyber_driver_pie.png" alt="Driver Pie Graph">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-3">
+                            <a href="fare_pie.html" class="thumbnail">
+                                <img src="Resources\Pyber_fare_pie.png" alt="Fare Pie Graph">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-3">
+                            <a href="ride_pie.html" class="thumbnail">
+                                <img src="Resources\Pyber_ride_pie.png" alt="Rider Pie Graph">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
